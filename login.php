@@ -55,9 +55,9 @@ else {
   $p=$_POST['pass'];
   $uid=0;
   $error=TRUE;
-  $user = 'u47502';
-  $pass = '8701243';
-  $db1 = new PDO('mysql:host=localhost;dbname=u47502', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+  $user = 'u47501';
+  $pass = '1469373';
+  $db1 = new PDO('mysql:host=localhost;dbname=u47501', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
   if(!empty($l) and !empty($p)){
     try{
       $chk=$db1->prepare("select * from username where login=?");
